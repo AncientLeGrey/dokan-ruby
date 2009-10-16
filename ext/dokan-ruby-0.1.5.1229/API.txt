@@ -1,0 +1,45 @@
+
+  open(path, context)
+
+  create(path, context)
+
+  truncate(path, context)
+
+  opendir(path, context)
+
+  mkdir(path, context)
+
+  cleanup(path, context)
+
+  close(path, context)
+
+  read(path, offset, length, context)
+
+  write(path, offset, data, context)
+
+  flush(path, context)
+
+  stat(path, context)
+   [size, attr, ctime, atime, mtime]
+
+# not implemented
+#  readdira(path, context)
+#    [ [name, size, attr, ctime, atime, mtime], [], ]
+
+  readdir(path, context)
+    [name1, name2, name3...]
+
+  setattr(path, attr, context)
+
+  utime(path, ctime, atime, mtime, context)
+
+  remove(path, context)
+
+  rename(path, newpath, context)
+
+  rmdir(path, context)
+
+  unmount(path, context)
+
+
+
