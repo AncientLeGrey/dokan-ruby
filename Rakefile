@@ -1,16 +1,23 @@
 require 'rubygems'
 require 'rake'
 
+# Source: http://dokan-dev.net/en/download/#ruby
+DOKAN_RUBY_EXT = "dokan-ruby-0.1.5.1229"
+
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "dokan-ruby"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.platform = 'mswin32'
+    gem.summary = %q{Ruby extension to write a windows file system.}
+    gem.description = %q{Dokan ist a "file system in userspace" driver for Win32. With dokan-ruby bindings, you can implement your own filesystem in Ruby!}
     gem.email = "greyhound@freenet.de"
     gem.homepage = "http://github.com/AncientLeGrey/dokan-ruby"
     gem.authors = ["AncientLeGrey"]
-    gem.add_development_dependency "thoughtbot-shoulda"
+    gem.files = FileList["[A-Z]*", "{lib,test,ext,sample}/**/*"]
+    gem.require_paths = ["lib", "ext/#{DOKAN_RUBY_EXT}", "ext/#{DOKAN_RUBY_EXT}/lib"]
+    gem.rdoc_options = ["--exclude", "dokan_lib.c"]
+    gem.add_development_dependency "shoulda"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError

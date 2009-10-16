@@ -1,6 +1,27 @@
 = dokan-ruby
 
-Description goes here.
+This is as wrapper-gem for dokan ruby bindings by Hiroki Asakawa.
+You can download the original souce from http://dokan-dev.net/en/download/#ruby.
+
+To run this gem you need dokan library installed.
+
+See the original README and LICENSE at
+* ext\dokan-ruby-0.1.5.1229\readme.txt
+* ext\dokan-ruby-0.1.5.1229\license.txt
+
+== What is Dokan Ruby Binding
+
+This program is a Ruby binding of Dokan that is a user mode file
+system for Windows. Using this program, you can make a file system
+in Ruby language.
+Ruby extension to write a windows file system.
+
+== Howto
+
+1. Install dokan library. You can find it here: http://dokan-dev.net/en/download/
+2. Install this gem (run rake build, on gemcutter.org)
+3. Run the samples unter ext\dokan-ruby-0.1.5.1229\samples to get a feeling ho things work
+4. Implement your own cool filsystem und mount it
 
 == Note on Patches/Pull Requests
  
