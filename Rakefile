@@ -9,7 +9,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "dokan-ruby"
     gem.platform = 'mswin32'
-    gem.summary = %q{Ruby extension to write a windows file system.}
+    gem.summary = %q{Ruby extension to write a windows file system (depending on Dokan library)}
     gem.description = %q{Dokan ist a "file system in userspace" driver for Win32. With dokan-ruby bindings, you can implement your own filesystem in Ruby!}
     gem.email = "greyhound@freenet.de"
     gem.homepage = "http://github.com/AncientLeGrey/dokan-ruby"

@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dokan-ruby}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
   s.platform = %q{mswin32}
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "dokan-ruby.gemspec",
      "ext/dokan-ruby-0.1.5.1229/API.txt",
      "ext/dokan-ruby-0.1.5.1229/dokan_lib.c",
      "ext/dokan-ruby-0.1.5.1229/dokan_lib.so",
@@ -44,7 +45,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--exclude", "dokan_lib.c"]
   s.require_paths = ["lib", "ext/dokan-ruby-0.1.5.1229", "ext/dokan-ruby-0.1.5.1229/lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{Ruby extension to write a windows file system.}
+  s.summary = %q{Ruby extension to write a windows file system (depending on Dokan library)}
   s.test_files = [
     "test/dokan-ruby_test.rb",
      "test/test_helper.rb"
