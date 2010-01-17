@@ -19,9 +19,13 @@ Ruby extension to write a windows file system.
 == Howto
 
 1. Install dokan library. You can find it here: http://dokan-dev.net/en/download/
-2. Install this gem (gem install dokan-ruby --source http://gemcutter.org)
+2. Install this gem (gem install dokan-ruby)
 3. Run the samples unter ext\dokan-ruby-0.1.5.1229\samples to get a feeling how things work
 4. Implement your own cool filsystem und mount it
+
+== Todo
+* Port library to mingw32 to make it work with the new RubyIntaller
+* Create some Testcases
 
 == Note on Patches/Pull Requests
  
@@ -36,4 +40,4 @@ Ruby extension to write a windows file system.
 
 == Copyright
 
-Copyright (c) 2009 AncientLeGrey. See LICENSE for details.
+Copyright (c) 2010 AncientLeGrey. See LICENSE for details.
