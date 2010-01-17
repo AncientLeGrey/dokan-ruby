@@ -8,10 +8,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "dokan-ruby"
-    gem.platform = 'mswin32'
+    gem.platform = 'mswin32_60'
     gem.summary = %q{Ruby extension to write a windows file system (depending on Dokan library)}
-    gem.description = %q{Dokan ist a "file system in userspace" driver for Win32. With dokan-ruby bindings, you can implement your own filesystem in Ruby!}
-    gem.email = "greyhound@freenet.de"
+    gem.description = %q{Dokan is a "file system in userspace" driver for Win32. With dokan-ruby bindings, you can implement your own filesystem in Ruby!}
+    gem.email = "greyhound2@freenet.de"
     gem.homepage = "http://github.com/AncientLeGrey/dokan-ruby"
     gem.authors = ["AncientLeGrey"]
     gem.files = FileList["[A-Z]*", "{lib,test,ext,sample}/**/*"]
@@ -60,4 +60,11 @@ Rake::RDocTask.new do |rdoc|
   rdoc.title = "dokan-ruby #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
+end
+
+# netbeans tasks
+task :gem => :build
+
+task :clean do
+  FileUtils.rm_rf 'pkg'
 end
